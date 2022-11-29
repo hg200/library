@@ -1,0 +1,42 @@
+:root {
+    --main-clr: #1e3a8a;
+    --accent-clr: #7dd3fc;
+    --btn-clr: #1e3a8a;
+    --secondary-clr: #bfdbfe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--secondary-clr);
+}
+
+.header {
+    background-color: var(--main-clr);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 34px;
+    color: var(--accent-clr);
+    font-weight: 700;
+}
+
+.stats-bar {
+    background-color: var(--accent-clr);
+    height: 5vh;
+}
+
+button {
+    background-color: var(--main-clr);
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    color: var(--accent-clr);
+    border-radius: 50%;
+    border-style: none;
+}
