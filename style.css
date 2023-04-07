@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    height: 12vh;
+    color: aquamarine;
+    font-size: 42px;
+    font-weight: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    font-family: fantasy;
+}
+
+.library-info {
+    background-color: ;
+    margin: 15px 10px 0px 10px;
+    height: 50px;
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    border-radius: 5em;
+}
+
+.library-info>div {
+    border-radius: 10em;
+    font-family: fantasy;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.total {
+    height: 100%;
+    background-color: lightcoral;
+}
+
+.read {
+    height: 100%;
+    background-color: green;
+}
+
+.not-read {
+    height: 100%;
+    background-color: red;
+}
+
+.container {
+    background-color: aquamarine;
+    margin: 25px 15px 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.book,
+.add-book {
+    height: 300px;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 1em;
+}
+
+.add-book {
+    color: white;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    opacity: 0.8;
+}
