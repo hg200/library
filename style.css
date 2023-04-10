@@ -14,7 +14,6 @@ body {
     height: 12vh;
     color: aquamarine;
     font-size: 42px;
-    font-weight: ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +22,6 @@ body {
 }
 
 .library-info {
-    background-color: ;
     margin: 15px 10px 0px 10px;
     height: 50px;
     opacity: 0.7;
@@ -174,7 +172,23 @@ input:checked+.slider:before {
     height: 20px;
     display: flex;
     align-items: center;
-    gap: 5px;
     justify-self: end;
+    font-style: italic;
+    gap: 10px;
+}
+
+.book .delete {
+    color: black;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    display: flex;
     align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px 0 0;
+    background-color: grey;
+    border-radius: 0.4em;
+    width: 25px;
+    height: 25px;
 }
