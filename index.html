@@ -16,8 +16,23 @@
         <div class="read">Read :</div>
         <div class="not-read">Not-Read :</div>
     </div>
+
     <div class="container">
-        <div class="add-book">+</div>
+        <div class="add-book">+ Add book</div>
+        <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+                <h2>Add New Book</h2>
+
+                <input type="text" placeholder="Title" name="psw" required>
+
+                <input type="text" placeholder="Author" name="author" required>
+
+                <input type="number" placeholder="pages" name="pages" required>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
         <div class="book" dataset-index="1">
             <div class="delete">x</div>
             <div class="name">The Art of War</div>
