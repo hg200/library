@@ -74,13 +74,96 @@ body {
 }
 
 .add-book {
+    height: 50px;
+    width: 150px;
     color: white;
-    font-size: 72px;
+    font-size: 22px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5em;
+    opacity: 0.8;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 1em;
+    letter-spacing: 2px;
+}
+
+.form-container>h2 {
+    font-size: 22px;
+    font-family: fantasy;
+    font-weight: 700;
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 1em;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus,
+.form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    font-family: fantasy;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0 0px 0;
+    border: none;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.25em;
+    height: 35px;
+    width: 100%;
+    margin-bottom: 10px;
     opacity: 0.8;
+    border-radius: 0.5em;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.add-book:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 .book {
@@ -191,4 +274,10 @@ input:checked+.slider:before {
     border-radius: 0.4em;
     width: 25px;
     height: 25px;
+}
+
+.delete:hover {
+    opacity: 1;
+    background-color: red;
+    cursor: pointer;
 }
