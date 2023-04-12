@@ -7,9 +7,20 @@ const library = (() => {
 })();
 
 const displayController = (() => {
+    let form = document.querySelector(".form-container");
     const addBtn = document.querySelector(".add-book");
     const deleteBtns = document.querySelectorAll(".delete");
     const close = document.querySelector(".cancel");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let title = document.getElementById("title");
+        let author = document.getElementById("author");
+        let pages = document.getElementById("pages");
+
+        console.log(`this books title is ${title.value} and is written by ${author.value} and has ${pages.value} pages`);
+    })
 
     addBtn.addEventListener("click", () => {
         document.getElementById("myForm").style.display = "block";
@@ -27,11 +38,7 @@ const displayController = (() => {
     })
 
 
-
-    const test = () => {
-        console.log(deleteBtns)
-    }
-    return { test, openForm }
+    return {}
 })();
 
 
