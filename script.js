@@ -11,7 +11,6 @@ const displayController = (() => {
     const deleteBtns = document.querySelectorAll(".delete");
     const close = document.querySelector(".cancel");
 
-
     addBtn.addEventListener("click", () => {
         document.getElementById("myForm").style.display = "block";
     });
@@ -20,9 +19,8 @@ const displayController = (() => {
         document.getElementById("myForm").style.display = "none";
     })
 
-    deleteBtns.forEach((btn, index) => {
+    deleteBtns.forEach((btn) => {
         btn.addEventListener("click", (e) => {
-            console.log(books[index]);
             e.target.parentElement.remove();
 
         })
