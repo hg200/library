@@ -15,6 +15,16 @@ const bookObject = (title, author, pages) => {
 
 const library = (() => {
     let myLibrary = [];
+
+    const addToLibrary = (bookArr) => {
+        myLibrary.push(bookArr);
+    }
+
+    const getLibrary = () => {
+        return myLibrary;
+    }
+
+    return { addToLibrary, getLibrary }
 })();
 
 const displayController = (() => {
@@ -30,10 +40,14 @@ const displayController = (() => {
         let author = document.getElementById("author");
         let pages = document.getElementById("pages");
 
-        console.log(`this books title is ${title.value} and is written by ${author.value} and has ${pages.value} pages`);
+        let bookArr = bookObject(title.value, author.value, pages.value).getBook();
+        library.addToLibrary(bookArr);
 
-        console.log(bookObject(title.value, author.value, pages.value).getBook());
-        //book.getBook();
+        // console.log(library.myLibrary);
+        // console.log(`this books title is ${title.value} and is written by ${author.value} and has ${pages.value} pages`);
+
+        //console.log(bookObject(title.value, author.value, pages.value).getBook());
+
     })
 
     addBtn.addEventListener("click", () => {
