@@ -90,6 +90,7 @@ body {
 .form-popup {
     display: none;
     position: fixed;
+    margin-bottom: 200px;
     display: flex;
     justify-self: center;
     align-self: center;
