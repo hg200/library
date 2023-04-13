@@ -1,5 +1,16 @@
-const book = () => {
+const bookObject = (title, author, pages) => {
 
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+
+    const getBook = () => {
+        let bookInfo = [this.title, this.author, this.pages];
+
+        return bookInfo;
+    };
+
+    return { getBook }
 };
 
 const library = (() => {
@@ -20,6 +31,9 @@ const displayController = (() => {
         let pages = document.getElementById("pages");
 
         console.log(`this books title is ${title.value} and is written by ${author.value} and has ${pages.value} pages`);
+
+        console.log(bookObject(title.value, author.value, pages.value).getBook());
+        //book.getBook();
     })
 
     addBtn.addEventListener("click", () => {
@@ -44,4 +58,10 @@ const displayController = (() => {
 
 const libraryController = (() => {
 
+    const addBook = () => {
+
+
+    }
+
+    return { addBook }
 })();
