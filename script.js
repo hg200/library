@@ -32,6 +32,8 @@ const displayController = (() => {
     const addBtn = document.querySelector(".add-book");
     const deleteBtns = document.querySelectorAll(".delete");
     const close = document.querySelector(".cancel");
+    const total = document.querySelector(".total");
+
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -99,6 +101,8 @@ const displayController = (() => {
             libraryDisplay.appendChild(book);
             updateEvents();
         }
+        total.innerHTML = `Total : ${libraryArr.length}`;
+
     }
 
 
